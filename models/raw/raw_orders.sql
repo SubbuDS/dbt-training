@@ -5,4 +5,5 @@
 }}
 
 select * from 
-RAW.GLOBALMART.ORDERS
+{{ source('globalmart', 'orders') }}
+--RAW.GLOBALMART.ORDERS
